@@ -1,12 +1,14 @@
-﻿using System;
-
-namespace Battleship.Presentation
+﻿namespace Battleship.Presentation
 {
-    class Program
+    using Battleship.Game;
+
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var game = new BattleshipGame();
+
+            game.PrintBoard();
         }
     }
 }
